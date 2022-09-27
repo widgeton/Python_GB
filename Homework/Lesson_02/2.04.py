@@ -14,4 +14,8 @@ A = []
 for i in range(-n, n + 1):
     A.append(i)
 print(A)
-print(A[ind_1] * A[ind_2])
+
+if ind_1 in range(len(A)) and ind_2 in range(len(A)):
+    print(A[ind_1] * A[ind_2])
+else:
+    print("Incorrect input")
